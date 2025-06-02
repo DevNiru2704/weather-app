@@ -63,9 +63,11 @@ app.get('/api/forecast/:city', async (req, res) => {
     }
 });
 
-app.listen(port, () => {
-    console.log(`Weather app backend (ESM) listening at http://localhost:${port}`);
-    if (!apiKey) {
-        console.warn("Warning: OPENWEATHERMAP_API_KEY is not set in the .env file. API calls will fail.");
-    }
-});
+// app.listen(port, () => {
+//     console.log(`Weather app backend (ESM) listening at http://localhost:${port}`);
+//     if (!apiKey) {
+//         console.warn("Warning: OPENWEATHERMAP_API_KEY is not set in the .env file. API calls will fail.");
+//     }
+// });
+
+export default app;
