@@ -19,7 +19,7 @@ const currentDateTxt = document.querySelector('.current-date-txt');
 
 const forecastItemsContainer = document.querySelector('.forecast-items-container');
 
-const backendBaseUrl = 'http://localhost:5000/api'; // Ensure this matches your backend
+const backendBaseUrl = 'https://weather-app-backend-git-main-nirmalya-mandals-projects.vercel.app/api'; // Ensure this matches your backend
 
 // --- ROUTER LOGIC ---
 
