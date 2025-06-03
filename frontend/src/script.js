@@ -138,7 +138,7 @@ async function displayWeatherForCity(city) {
     humidityValueTxt.textContent = humidity + '%';
     windValueTxt.textContent = speed + ' M/s';
     currentDateTxt.textContent = getCurrentDate();
-    weatherSummaryImg.src = `./public/assets/weather/${getWeatherIcon(id)}`;
+    weatherSummaryImg.src = `/assets/weather/${getWeatherIcon(id)}`;
 
     await displayForecastForCity(city); // Changed to call a more specific forecast display function
     showDisplaySection(weatherInfoSection); // Show the weather info section
@@ -187,7 +187,7 @@ function renderForecastItem(weatherData) {
     const forecastItemHTML = `
         <div class="forecast-item">
             <h5 class="forecast-item-date regular-txt">${dateResult}</h5>
-            <img src="./public/assets/weather/${getWeatherIcon(id)}" class="forecast-item-img" alt="${getWeatherIcon(id).split('.')[0]} icon">
+            <img src="/assets/weather/${getWeatherIcon(id)}" class="forecast-item-img" alt="${getWeatherIcon(id).split('.')[0]} icon">
             <h5 class="forecast-item-temp">${Math.round(temp)} °C</h5>
         </div>
     `;
