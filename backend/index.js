@@ -63,6 +63,7 @@ app.get('/api/forecast/:city', async (req, res) => {
     }
 });
 
+//Uncomment the following snippet if run in a local environment
 // app.listen(port, () => {
 //     console.log(`Weather app backend (ESM) listening at http://localhost:${port}`);
 //     if (!apiKey) {
