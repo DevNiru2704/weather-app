@@ -10,7 +10,7 @@ const apiKey = process.env.OPENWEATHERMAP_API_KEY;
 
 // Middleware
 app.use(cors({
-  origin: 'https://weather-app-frontend-q4e8e0xmo-nirmalya-mandals-projects.vercel.app'
+  origin: 'https://weather-app-frontend-silk.vercel.app'
 }));
 app.use(express.json());
 
